@@ -2,9 +2,11 @@ pipeline {
   agent { label 'nodejs-app' }
     stages {
       stage('Build') {
+        steps {
             container('nodejs') {
                 echo 'Building...'
                 sh 'npm install'
+            }
             }
         }
       stage('Test') {
