@@ -1,5 +1,5 @@
 pipeline {
-  agent any
+  agent nodejs-app
   stages {
     stage('Say Hello') {
       steps {
