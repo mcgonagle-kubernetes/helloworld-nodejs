@@ -1,6 +1,5 @@
 pipeline {
   agent { label 'nodejs-app' }
-  stages {
     stages {
       stage('Build') {
             container('nodejs') {
