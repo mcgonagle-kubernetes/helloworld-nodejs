@@ -17,7 +17,7 @@ pipeline {
           echo 'Hello World!'   
           sh 'node --version'
           sh 'ls'
-          sh 'npm run-script helloworld-nodejs/hello.js'
+          sh 'npm run-script hello.js'
         }
       }
     }
