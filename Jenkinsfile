@@ -16,7 +16,7 @@ pipeline {
         container('nodejs') {
           echo 'Hello World!'   
           sh 'node --version'
-          sh 'npm run-script hello.js'
+          sh 'npm run-script helloworld-nodejs/hello.js'
         }
       }
     }
