@@ -3,6 +3,7 @@ pipeline {
     stages {
       stage('Build') {
         steps {
+            git url: 'https://github.com/mcgonagle-kubernetes/helloworld-nodejs.git'
             container('nodejs') {
                 echo 'Building...'
                 sh 'npm install'
