@@ -15,5 +15,12 @@ pipeline {
         }
       }
     }
+    stage('Deploy') {
+      steps {
+          container('nodejs') {
+           echo 'Deploying...'
+          }
+        }
+      }
   }
 }
